@@ -1,0 +1,53 @@
+# Enterprise DNS Server Configuration (Linux - BIND9)
+
+This project outlines the steps and configuration details required to set up a production-ready DNS server using *BIND9* on a Linux system. It is suitable for small to medium enterprises (SMEs), internal corporate networks, or staging environments.
+
+## Project Overview
+
+A properly configured internal DNS server improves network performance, enables internal name resolution, and centralizes hostname-IP management.
+
+## Technologies Used
+
+- Linux (RHEL, CentOS, Ubuntu)
+- BIND9 (Berkeley Internet Name Domain)
+- Systemd service manager
+- DNS tools: dig, nslookup, host
+
+## Objectives
+
+- Configure authoritative DNS zones (forward and reverse)
+- Ensure DNS service starts reliably and securely
+- Provide testing, validation, and logging mechanisms
+
+## Prerequisites
+
+- Root or sudo access
+- Static IP address assigned to the DNS server
+- Hostname and domain naming convention ready (e.g., aniket.an.com)
+
+## Server Information
+
+- *Hostname:* dns.example.com  
+- *IP Address:* 192.168.1.10  
+- *Domain:* example.com
+
+### Step 1: Install BIND9
+### Step 2: Set Hostname and Static IP
+###Step 3: Configure Zones
+Example: /etc/named.conf (RHEL/CentOS)
+###Step 4: Create Forward Zone File
+Example: /var/named/an.flz
+###Step 5: Create Reverse Zone File
+Example: /var/named/an.rlz
+###Step 6:Set server /etc/resolv.conf
+###Step 7: Start and Enable BIND Service
+###Step 8: Configure Firewall
+###Step 9:start named.service&test dns resolution
+Example:dig @localhost example.com
+dig -x 192.168.1.10
+host www.example.com
+nslookup www.example.com  
+
+Conclusion
+
+I have successfully configured a DNS server with both forward and reverse zone lookups. I can now use this DNS within your local network or extend it for advanced features like slave DNS, DNSSEC, or integration with DHCP.

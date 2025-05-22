@@ -1,0 +1,21 @@
+
+; <<>> DiG 9.18.33 <<>> ankdm.kt.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 57996
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: c1931cc513f3c37701000000682f0d947523bdcd981f7926 (good)
+;; QUESTION SECTION:
+;ankdm.kt.com.			IN	A
+
+;; ANSWER SECTION:
+ankdm.kt.com.		86400	IN	A	172.31.41.1
+
+;; Query time: 0 msec
+;; SERVER: 172.31.41.1#53(172.31.41.1) (UDP)
+;; WHEN: Thu May 22 11:42:12 UTC 2025
+;; MSG SIZE  rcvd: 85
+
