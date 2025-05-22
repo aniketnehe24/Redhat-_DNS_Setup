@@ -14,7 +14,7 @@ echo "Enabling and starting named service..."
 sudo systemctl enable --now named
 
 # Set hostname
-NEW_HOSTNAME="aniket.an.com"
+NEW_HOSTNAME=" ankdm.kt.com"
 echo "Setting hostname to $NEW_HOSTNAME..."
 sudo hostnamectl set-hostname "$NEW_HOSTNAME"
 

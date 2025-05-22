@@ -27,9 +27,9 @@ A properly configured internal DNS server improves network performance, enables 
 
 ## Server Information
 
-- *Hostname:* dns.example.com  
-- *IP Address:* 192.168.1.10  
-- *Domain:* example.com
+- *Hostname:* ankdm.kt.com  
+- *IP Address:* 172.31.41.1  
+- *Domain:* kt.com
 
 ### Step 1: Install BIND9
 ### Step 2: Set Hostname and Static IP
@@ -44,9 +44,9 @@ Example: /var/named/an.rlz
 ###Step 8: Configure Firewall
 ###Step 9:start named.service&test dns resolution
 Example:dig @localhost example.com
-dig -x 192.168.1.10
-host www.example.com
-nslookup www.example.com  
+dig -172.31.41.1
+host ankdm.kt.com
+nslookup ankdm.kt.com  
 
 Conclusion
 
